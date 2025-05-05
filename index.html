@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+
+  <!-- ! links for external pages    -->
+
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+
+</head>
+<body>
+  
+
+  <!-- TODO main  -->
+
+  <main class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center d-flex flex-column justify-content-center align-items-center h-auto my-5">
+          <h1>Welcome to Weather App</h1>
+          <p class="fs-5">This is a simple weather app that shows the current weather in your city</p>
+
+          <div class="row d-flex justify-content-center">
+            <div class="">
+              <div class="card" style="width: 25rem;">
+                <img src="./imgs/1 (4).jpg" class="card-img-top" alt="Weather illustration">
+                <div class="card-body">
+                  <h5 class="city-display">City Name</h5>
+                  <p class="temp-display text-dark">Temperature: --°C</p>
+                  <p class="humidity-display text-dark">Humidity: --%</p>
+                  <p class="description-display text-dark">Description: --</p>
+                  <p class="error-display text-danger"></p>
+
+                  <form class="row g-3" id="weatherForm">
+                    <div class="col-auto">
+                      <label for="cityInput" class="visually-hidden">City</label>
+                      <input type="text" class="form-control" id="cityInput" placeholder="City Name" required>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary">Get Weather</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="git-link d-flex justify-content-center align-items-center my-5">
+            <span class="fs-4 bg-light p-3 rounded-4">Explore the code at GitHub <i class="fab fa-github"></i></span>
+            <button class="btn btn-light ms-3">
+              <a href="https://github.com/maryam2001-ux/javascript_projects" target="_blank" style="text-decoration: none; color: #115505;">Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+
+  <!-- ! scripts  --> 
+
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
+
+
+</body>
+</html>
